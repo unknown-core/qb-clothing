@@ -684,8 +684,8 @@ AddEventHandler('qb-clothing:client:openMenu', function()
     customCamLocation = nil
     openMenu({
         {menu = "character", label = "Character", selected = true},
-        {menu = "clothing", label = "Features", selected = false},
-        {menu = "accessoires", label = "Accessories", selected = false}
+--         {menu = "clothing", label = "Features", selected = false},
+--         {menu = "accessoires", label = "Accessories", selected = false}
     })
 end)
 
