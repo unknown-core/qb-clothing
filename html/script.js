@@ -527,6 +527,8 @@ QBClothing.SetMaxValues = function(maxValues) {
             $(itemMax).data('maxItem', maxValues[containers.data('type')].item)
             $(headerMax).data('maxTexture', maxValues[containers.data('type')].texture)
 
+            $(containers).find('.item-number').attr({"max": maxValues[containers.data('type')].item, "min": 0});
+
             $(itemMax).html("<p>Item: " + maxValues[containers.data('type')].item + "</p>")
             $(headerMax).html("<p>Texture: " + maxValues[containers.data('type')].texture + "</p>")
         } else if (cat.type == "hair") {
