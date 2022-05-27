@@ -566,6 +566,21 @@ QBClothing.ResetValues = function() {
     })
 }
 
+$(function () {
+    $( "input" ).change(function() {
+    var max = parseInt($(this).attr('max'));
+    var min = parseInt($(this).attr('min'));
+    if ($(this).val() > max)
+    {
+       $(this).val(max);
+    }
+    else if ($(this).val() < min)
+    {
+       $(this).val(min);
+    }       
+  }); 
+});
+
 $(document).on('click', '#save-outfit', function(e) {
     e.preventDefault();
 
