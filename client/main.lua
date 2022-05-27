@@ -1743,9 +1743,9 @@ AddEventHandler('qb-clothes:client:CreateFirstCharacter', function()
     QBCore.Functions.GetPlayerData(function(PlayerData)
         local skin = "mp_m_freemode_01"
         openMenu({
-            {menu = "character", label = "Character", selected = true},
-            {menu = "clothing", label = "Features", selected = false},
-            {menu = "accessoires", label = "Accessories", selected = false}
+            {menu = "character", label = "Character", selected = true}--,
+        --    {menu = "clothing", label = "Features", selected = false},
+         --   {menu = "accessoires", label = "Accessories", selected = false} -- changes made by sTREXia
         })
 
         if PlayerData.charinfo.gender == 1 then
